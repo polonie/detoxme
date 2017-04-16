@@ -60,7 +60,7 @@
 					.nav-logo-title-heading{
 						font-size: 16px;
 						font-weight: 200;
-						line-height: 100px;
+						line-height: 90px;
 						color: #666;
 					}
 			.nav-links{
@@ -77,7 +77,7 @@
 						font-size: 16px;
 						font-weight: 300;
 						color: #777;
-						line-height: 100px;
+						line-height: 90px;
 					}
 					.nav-link:hover{
 						color: #ccc;
@@ -210,14 +210,15 @@
 								}
 /*ABOUT US BLOCK*/
 	.about-us-block{
-		margin-top: 60px;
+
 	}
 		.about-us-block-container{
+			padding: 80px 0;
 			width: 1000px;
 			margin: 0 auto;
 		}
 			.about-us-block-heading{
-				padding-bottom: 40px;
+
 			}
 				.about-us-block-heading-title{
 					font-size: 30px;
@@ -226,7 +227,7 @@
 					text-align: center;
 				}
 			.about-us-block-body{
-				margin-top: 20px;
+				margin-top: 80px;
 			}
 				.about-us-block-body-left{
 					float: left;
@@ -272,7 +273,7 @@
 							}
 /*ABOUT US BLOCK*/
 	.benefits-block{
-		margin-top: 70px;
+
 	}
 		.benefits-block-container{
 			width: 1000px;
@@ -317,9 +318,10 @@
 						}
 /*ASSORTMENT*/
 	.assortment-block{
-		margin-top: 100px;
+
 	}
 		.assortment-block-container{
+			padding: 80px 0;
 			width: 1000px;
 			margin: 0 auto;
 		}
@@ -333,7 +335,7 @@
 					text-align: center;
 				}
 			.assortment-block-body{
-				margin-top: 30px;
+				margin-top: 80px;
 			}
 				.assortment-block-item{
 					padding: 30px;
@@ -414,7 +416,6 @@
 /*PLAN BLOCK*/
 	.plan-block{
 		background: #fdfdfd;
-		margin-top: 100px;
 	}
 		.plan-block-container{
 			width: 900px;
@@ -584,7 +585,7 @@
 /*INSTA-BLOCK*/
 .insta-block{
 
-	}
+}
 	.insta-block-container{
 		width: 900px;
 		margin: 0 auto;
@@ -662,104 +663,3 @@
 			.soc-icon:hover{
 				color: #ccc;
 			}
-
-/*MOBILE VERSION*/
-@media only screen and (max-width: 767px){
-	.nav-top-container{
-
-	}
-	.slider-block-container{
-
-	}
-	.about-detox-block-container{
-
-	}
-	.about-us-block-container{
-
-	}
-	.benefits-block-container{
-
-	}
-	.assortment-block-container{
-
-	}
-	.plan-block-container{
-
-	}
-	.contact-block-container{
-
-	}
-	.insta-block-container{
-
-	}
-	.footer-block-container{
-
-	}
-}
-@media screen and (min-width: 768px) and (max-width: 991px){
-	.nav-top-container{
-		width: 750px;
-	}
-	.slider-block-container{
-		width: 750px;
-	}
-	.about-detox-block-container{
-		width: 750px;
-	}
-	.about-us-block-container{
-		width: 750px;
-	}
-	.benefits-block-container{
-		width: 750px;
-	}
-	.assortment-block-container{
-		width: 750px;
-	}
-	.plan-block-container{
-		width: 750px;
-	}
-	.contact-block-container{
-		width: 750px;
-	}
-	.insta-block-container{
-		width: 750px;
-	}
-	.footer-block-container{
-		width: 750px;
-	}
-}
-@media screen and (min-width: 992px) and (max-width: 1199px){
-	
-}
-@media only screen and (min-width: 1200px){
-	.nav-top-container{
-
-	}
-	.slider-block-container{
-
-	}
-	.about-detox-block-container{
-
-	}
-	.about-us-block-container{
-
-	}
-	.benefits-block-container{
-
-	}
-	.assortment-block-container{
-
-	}
-	.plan-block-container{
-
-	}
-	.contact-block-container{
-
-	}
-	.insta-block-container{
-
-	}
-	.footer-block-container{
-
-	}
-}

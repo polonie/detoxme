@@ -20,4 +20,12 @@ $(document).ready(function(){
 		slidesToShow: 5,
 		slidesToScroll: 5
 	});
+	$('.nav-link').click(function(e){
+		e.preventDefault();
+		var linkHref = $(this).attr('href');
+		console.log(linkHref);
+		$('html, body').animate({
+			scrollTop: $(linkHref).offset().top
+		}, 500);
+	});
 });

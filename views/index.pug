@@ -7,6 +7,7 @@ html(lang='en')
 		link(rel='stylesheet', type='text/css', href='./css/slick.css')
 		link(rel='stylesheet', type='text/css', href='./css/slick-theme.css')
 		link(href='./css/main.css' rel='stylesheet')
+		link(href='./css/mqueries.css' rel='stylesheet')
 		link(href='https://fonts.googleapis.com/css?family=Roboto:200,300,300i,400,400i,500,500i,700&subset=cyrillic', rel='stylesheet')
 		script(src="https://use.fontawesome.com/335720a3b2.js")
 	body.page
@@ -33,15 +34,15 @@ html(lang='en')
 						h1.nav-logo-title-heading Детокс-программы №1 в РК
 				.nav-links
 					.nav-link-item
-						a.nav-link.link О Detox
+						a(href='#aboutdetox').nav-link.link О Detox
 					.nav-link-item
-						a.nav-link.link О нас
+						a(href='#aboutus').nav-link.link О нас
 					.nav-link-item
-						a.nav-link.link Ассортимент
+						a(href='#assortment').nav-link.link Ассортимент
 					.nav-link-item
-						a.nav-link.link Наши программы
+						a(href='#plan').nav-link.link Наши программы
 					.nav-link-item
-						a.nav-link.link Контакты
+						a(href='#contacts').nav-link.link Контакты
 		.slider-block
 			.slider-block-container
 				.slider
@@ -66,7 +67,7 @@ html(lang='en')
 								h2.img-title-heading Detox завтрак
 						.slide-block-title
 							h2.slide-title Полноценный завтрак для заряда на весь день
-		.about-detox-block
+		#aboutdetox.about-detox-block
 			.about-detox-block-container
 				.about-detox-block-heading
 					h2.about-detox-block-heading-title О Detox
@@ -121,7 +122,7 @@ html(lang='en')
 									h3.about-detox-item-right-heading-title Продолжительность жизни
 								.about-detox-item-right-body
 									p.about-detox-item-right-body-text Правильно применяя Detox-программу, вы вкладываете в своё долголетие и увеличиваете продолжительность жизни до 20 лет.
-		.about-us-block
+		#aboutus.about-us-block
 			.about-us-block-container
 				.about-us-block-heading
 					h2.about-us-block-heading-title О нас
@@ -163,7 +164,7 @@ html(lang='en')
 							p.benefits-block-bg-img-hover-body-text Сок, в отличии от традиционных фрешей, сделанных центрифужным методом, густой, сытный и невероятно вкусный ;)
 							p.benefits-block-bg-img-hover-body-text Наши снэки без белой муки / сахара / животных жиров.
 							p.benefits-block-bg-img-hover-body-text Наши Детокс-программы – это идеальная опция для максимально эффективного очищения организма в условиях большого города.
-		.assortment-block
+		#assortment.assortment-block
 			.assortment-block-container
 				.assortment-block-header
 					h2.assortment-block-header-title Ассортимент
@@ -249,7 +250,7 @@ html(lang='en')
 							.assortment-block-item-right-about
 								p.assortment-block-item-right-text Низкокалорийный DETOX-суп, содержит аскорбиновую и фолиевую кислоты, витамины группы В, РР, Е, магний, фосфор, а также соли кальция, калия и натрия. Суп обладает сильнейшими противовоспалительными, антиоксидантными и стимулирующими свойствами, выраженным противораковым эффектом, содержит Омега 3, является ценным источником кемпферола, биоактивного вещества, укрепляющего сосуды, способствующего выведению токсинов, обладающего антиаллергическим, общеукрепляющим и тонизирующим эффектом.
 								p.assortment-block-item-right-text Рекомендуется в качестве общеукрепляющего витаминного средства, которое налаживает метаболизм, содержит много витамина D (главного противника лишнего веса).
-		.plan-block
+		#plan.plan-block
 			.plan-block-container
 				.plan-block-header
 					h2.plan-block-header-title Программы
@@ -280,7 +281,7 @@ html(lang='en')
 								.plan-block-body-item-field Срок курса – 14 дней
 								.plan-block-body-item-field Данный курс подбирается индивидуально нашими специалистами и диетологом, учитывая Ваши пожелания, цели и окончательный результат.
 								.more-button Подробнее
-		.contact-block
+		#contacts.contact-block
 			.contact-block-container.clearfix
 				.contact-block-heading
 					h2.contact-block-title Наши контакты
@@ -353,8 +354,9 @@ html(lang='en')
 							i.fa.fa-lg.fa-instagram.soc-icon(aria-hidden="true")
 						span.footer-block-content-span
 							i.fa.fa-lg.fa-vk.soc-icon(aria-hidden="true")
-		script(type='text/javascript', src='//code.jquery.com/jquery-1.11.0.min.js')
-		script(type='text/javascript', src='//code.jquery.com/jquery-migrate-1.2.1.min.js')
+		//- script(type='text/javascript', src='//code.jquery.com/jquery-1.11.0.min.js')
+		//- script(type='text/javascript', src='//code.jquery.com/jquery-migrate-1.2.1.min.js')
+		script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
 		script(type='text/javascript', src='./js/slick.min.js')
 		script(src='./js/main.js')
 
