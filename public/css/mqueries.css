@@ -2,6 +2,7 @@
 	.nav-top-container{
 		width: 90%;
 		margin: 0 auto;
+		padding-top: 20px;
 	}
 		.nav-logo{
 			display: block;
@@ -10,8 +11,26 @@
 		}
 			.nav-logo-img{
 				float: none;
+				display: block;
+				text-align: center;
+			}
+			.logo-link{
 				display: inline-block;
 			}
+				.logo-link-image{
+					display: block;
+				}
+			.nav-logo-title{
+				display: block;
+				text-align: center;
+				float: none;
+				padding: 20px 0;
+			}
+				.nav-logo-title-heading{
+					display: inline-block;
+					font-weight: 400;
+					line-height: 1em;
+				}
 		.nav-links{
 			display: block;
 			float: none;
@@ -20,8 +39,17 @@
 				float: none;
 				text-align: center;
 				margin: 0;
-				border-top: 1px solid #e0e0e0;
+				padding: 10px 0;
 			}
+				.nav-link{
+					line-height: normal;
+				}
+		.line-between{
+			display: none;
+		}
+		.slider-block-container{
+			width: 90%;
+		}
 }
 @media screen and (min-width: 768px) and (max-width: 991px){
 	.nav-top-container{
@@ -86,6 +114,9 @@
 		.img-title-heading{
 			font-size: 25px;
 		}
+	.about-detox-block-container{
+		width: 750px;
+	}
 }
 @media screen and (min-width: 992px) and (max-width: 1199px){
 	.nav-top-container{
