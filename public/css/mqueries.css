@@ -80,6 +80,12 @@
 		.slide-title{
 			font-size: 25px;
 		}
+		.img-title.img-title{
+			top: -50px;
+		}
+		.img-title-heading{
+			font-size: 25px;
+		}
 }
 @media screen and (min-width: 992px) and (max-width: 1199px){
 	.nav-top-container{
