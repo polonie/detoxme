@@ -28,4 +28,19 @@ $(document).ready(function(){
 			scrollTop: $(linkHref).offset().top
 		}, 500);
 	});
+	$('.order-button').click(function(e) {
+		$('.hover-block').css("display", "block")
+			.animate({opacity: "1"}, 300);
+			$('.popup-window').animate({top: "+=100px"}, 300);
+	});
+	$('.brief-form').submit(function(e) {
+		e.preventDefault();
+	});
+	$('.popup-window-close-button').click(function(e) {
+		$('.hover-block').css("display", "none")
+			.animate({opacity: "0"});
+			$('.popup-window').animate({top: "-=100px"})
+	});
+	var rightHeight = $('.about-us-block-body-right').css('height');
+	$('.about-us-block-body-left').css('height', rightHeight).css('overflow', 'hidden');
 });
