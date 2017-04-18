@@ -1,0 +1,97 @@
+@media screen and (max-width: 767px){
+	.block-title{
+		font-size: 20px;
+	}
+	.block{
+		padding: 0;
+	}
+	.page-container{
+		width: 100%;
+		padding: 20px 10px;
+		margin: 0;
+	}
+	.floated{
+		float: none;
+		width: 100%;
+		display: block;
+		top:0;
+		margin: 0;
+		margin-top: 15px;
+	}
+	.block-header{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.nav-contacts{
+		display: none;
+	}
+	.nav-menu{
+		margin-top: 20px;
+	}
+	.nav-logo-title-heading{
+		font-size: 14px;
+	}
+	.nav-link-item:first-child{
+		margin-top: 0;
+	}
+	.nav-button{
+		width: 50%;
+		margin: 0 auto;
+		padding: 2px;
+		margin-top: 15px;
+		font-size: 12px;
+	}
+	.about-detox-form{
+		border-left: 1px solid #e0e0e0;
+	}
+	.slide-content-bottom{
+		top: 0;
+	}
+	.about-detox-form-heading{
+		font-size: 20px;
+	}
+	.about-detox-block-body{
+		margin-top: 20px;
+	}
+	.about-detox-items-row{
+		margin:0;
+	}
+	.about-detox-item{
+		margin-top: 15px;
+	}
+	.benefits-block-bg-hover{
+		top:0;
+		left:0;
+		right:0;
+		bottom:0;
+	}
+	.benefits-block-bg-hover{
+		padding: 10px;
+	}
+	.contact-form-block-left{
+		margin-top: 0;
+	}
+	.contact-block-content-text{
+		font-size: 14px;
+	}
+	.footer-block-content-left{
+		text-align: center;
+	}
+	.footer-block-content-right{
+		text-align: center;
+	}
+}
+@media screen and (max-width: 400px){
+	.about-detox-item-right-heading-title{
+		position: relative;
+		top: 20%;
+		font-size: 14px;
+		line-height: normal;
+	}
+	.slide-title{
+		font-size: 16px;
+	}
+	.about-detox-item-right-body-text{
+		font-size: 12px;
+	}
+}

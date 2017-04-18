@@ -7,12 +7,12 @@ html(lang='en')
 		link(rel='stylesheet', type='text/css', href='./css/slick.css')
 		link(rel='stylesheet', type='text/css', href='./css/slick-theme.css')
 		link(href='./css/main.css' rel='stylesheet')
-		link(href='./css/mqueries.css' rel='stylesheet')
+		link(href='./css/media.css' rel='stylesheet')
 		link(href='https://fonts.googleapis.com/css?family=Roboto:200,300,300i,400,400i,500,500i,700&subset=cyrillic', rel='stylesheet')
 		script(src="https://use.fontawesome.com/335720a3b2.js")
 	body.page
 		.hover-block
-			.popup-window
+			.popup-window.floated
 				.popup-window-close-button
 					i.fa.fa-times.close-icon(aria-hidden='true')
 				h3.popup-window-title Оставьте заявку
@@ -26,11 +26,19 @@ html(lang='en')
 					.brief-form-field
 						input.brief-form-submit(type='submit' name='submit' value='Отправить')
 		.nav-top
-			.nav-top-container.clearfix
-				.nav-logo.clearfix
+			.nav-top-container.page-container.clearfix
+				.nav-contacts.floated
+					.nav-contacts-item
+						span.nav-contacts-item-span Тел: 8 700 999 05 55
+					.nav-contacts-item
+						span.nav-contacts-item-span Email: azimova90@gmail.com
+					.nav-contacts-item
+						p.nav-contacts-item-text Приём заказов на доставку
+						p.nav-contacts-item-text по г.Алматы с 10:00 до 18:00
+				.nav-logo.floated
 					.nav-logo-img
 						a.logo-link.link
-							svg.logo-link-img(version='1.1', xmlns='http://www.w3.org/2000/svg' x='0px', y='0px', viewbox='0 0 90 90')
+							svg.logo-link-img(version='1.1' xmlns='http://www.w3.org/2000/svg' width="130px" height="130px" viewBox="0 0 90 90")
 								style(type='text/css').
 									.st0{fill:#191919;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;}
 									.st1{font-family:'Roboto';}
@@ -40,54 +48,60 @@ html(lang='en')
 									.st5{fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;}
 								path.st0(d='M40.7 6.9c2.9-.4 5.8-.6 8.8-.4 22.6 1.3 40 19.8 38.8 41.4s-20.6 38-43.2 36.7c-6-.3-11.7-1.9-16.7-4.4 4.8 2.5 10.2 4 15.9 4.4 21.6 1.2 40-15.3 41.3-36.8S70.3 7.7 48.8 6.4c-2.9-.2-5.7 0-8.4.4')
 								path.st0(d='M50.8 85.3c-3 .4-6.1.5-9.2.3C18 83.8.2 64.2 1.9 41.7S24 2.4 47.6 4.1C53.9 4.6 59.8 6.4 65 9.1 60 6.4 54.4 4.7 48.5 4.2 26 2.5 6.4 19.4 4.7 41.9S19.9 84 42.4 85.6c3 .2 5.9.1 8.8-.3')
-								text.st1.st2(transform='matrix(0.8323 0 0 1 8.9737 47.0396)') DETOX.ME
+								//- text.st1.st2(transform='matrix(0.8323 0 0 1 8.9737 47.0396)') DETOX.ME
+								text.st1.st2(transform='matrix(0.9323 0 0 1 9.9937 47.0396)') DETOX.ME
 								text.st3.st4(transform='matrix(0.9418 0 0 1 31.3892 63.4019)') ALMATY
 								ellipse.st5(cx='45', cy='45', rx='44.5', ry='42.7')
-					.line-between
 					.nav-logo-title
-						h1.nav-logo-title-heading Детокс-программы №1 в РК
+						h1.nav-logo-title-heading ДЕТОКС-ПРОГРАММЫ №1 В РК
+				.nav-order.floated
+					.nav-button-row.clearfix
+						.nav-order-button.nav-button.order-button.floated Сделать заказ
+					.nav-button-row.clearfix
+						.nav-link.nav-feedback-button.nav-button.floated(href='#contacts') Оставить отзыв
+			.nav-menu
 				.nav-links
-					.nav-link-item
+					.nav-link-item.floated
 						a(href='#aboutdetox').nav-link.link О Detox
-					.nav-link-item
+					.nav-link-item.floated
 						a(href='#aboutus').nav-link.link О нас
-					.nav-link-item
+					.nav-link-item.floated
 						a(href='#assortment').nav-link.link Ассортимент
-					.nav-link-item
+					.nav-link-item.floated
 						a(href='#plan').nav-link.link Наши программы
-					.nav-link-item
+					.nav-link-item.floated
 						a(href='#contacts').nav-link.link Контакты
 		.slider-block
-			.slider-block-container
+			.slider-block-container.page-container
 				.slider
-					.slider-1.slide.clearfix
-						.slide-block-img
-							img.slide-img(src='./img/slide1.png')
-							.img-title.img-title_green
-								h2.img-title-heading Detox напитки
-						.slide-block-title
-							h2.slide-title Комфортная опция для очищения организма в условиях мегаполиса
-					.slider-2.slide.clearfix
-						.slide-block-img
-							img.slide-img(src='./img/slide2.png')
-							.img-title.img-title_red
-								h2.img-title-heading Натуральные ингридиенты
-						.slide-block-title
-							h2.slide-title Только свежие и натуральные фрукты и овощи
-					.slider-3.slide.clearfix
-						.slide-block-img
-							img.slide-img(src='./img/slide3.png')
-							.img-title.img-title_orange
-								h2.img-title-heading Detox завтрак
-						.slide-block-title
-							h2.slide-title Полноценный завтрак для заряда энергией на весь день
+					.slider-1.slide
+						.slide-content-top.clearfix
+							.slide-block-img.floated
+								img.slide-img(src='./img/slide1.png')
+							.slide-block-title.floated
+								h2.slide-title Комфортная опция для очищения организма в условиях мегаполиса
+						.slide-content-bottom Detox напитки
+					.slider-2.slide
+						.slide-content-top.clearfix
+							.slide-block-img.floated
+									img.slide-img(src='./img/slide2.png')
+							.slide-block-title.floated
+									h2.slide-title Только свежие и натуральные фрукты и овощи
+						.slide-content-bottom Натуральные ингредиенты
+					.slider-3.slide
+						.slide-content-top.clearfix
+							.slide-block-img.floated
+								img.slide-img(src='./img/slide3.png')
+							.slide-block-title.floated
+								h2.slide-title Полноценный завтрак для заряда энергией на весь день
+						.slide-content-bottom Detox завтрак
 		#aboutdetox.about-detox-block
-			.about-detox-block-container
-				.about-detox-block-heading
-					h2.about-detox-block-heading-title О Detox
+			.about-detox-block-container.page-container
+				.about-detox-block-heading.block-header
+					h2.about-detox-block-heading-title.block-title О Detox
 				.about-detox-block-body
 					.about-detox-items-row.clearfix
-						.about-detox-item.clearfix
+						.about-detox-item.clearfix.floated
 							.about-detox-item-left
 								img.about-detox-item-left-icon(src='./img/icon1.png')
 							.about-detox-item-right
@@ -95,7 +109,7 @@ html(lang='en')
 									h3.about-detox-item-right-heading-title Стройность
 								.about-detox-item-right-body
 									p.about-detox-item-right-body-text Detox-программа обеспечивает полный отдых пищеварительному тракту и печени, эффективно очищает организм от токсинов, оздоравливает, укрепляет иммунитет.
-						.about-detox-item.clearfix
+						.about-detox-item.clearfix.floated
 							.about-detox-item-left
 								img.about-detox-item-left-icon(src='./img/icon3.png')
 							.about-detox-item-right
@@ -103,7 +117,7 @@ html(lang='en')
 									h3.about-detox-item-right-heading-title Двойной результат
 								.about-detox-item-right-body
 									p.about-detox-item-right-body-text Кроме очищения при прохождении Detox-программы, Вы получаете дополнительный результат в виде снижения веса от 2 до 6 кг.
-						.about-detox-item.clearfix
+						.about-detox-item.clearfix.floated
 							.about-detox-item-left
 								img.about-detox-item-left-icon(src='./img/icon2.png')
 							.about-detox-item-right
@@ -112,7 +126,7 @@ html(lang='en')
 								.about-detox-item-right-body
 									p.about-detox-item-right-body-text Для изготовления Detox-программ мы используем только свежие, натуральные овощи и фрукты, благодаря чему вы получаете полезные и вкусные фруктово-овощные коктейли.
 					.about-detox-items-row.clearfix
-						.about-detox-item.clearfix
+						.about-detox-item.clearfix.floated
 							.about-detox-item-left
 								img.about-detox-item-left-icon(src='./img/icon4.png')
 							.about-detox-item-right
@@ -120,7 +134,7 @@ html(lang='en')
 									h3.about-detox-item-right-heading-title Технология холодного отжима
 								.about-detox-item-right-body
 									p.about-detox-item-right-body-text Благодаря современной технологии холодного отжима сок нагревается до 35°С, сохраняя в 3 раза больше витаминов чем при традиционном отжиме.
-						.about-detox-item.clearfix
+						.about-detox-item.clearfix.floated
 							.about-detox-item-left
 								img.about-detox-item-left-icon(src='./img/icon5.png')
 							.about-detox-item-right
@@ -128,7 +142,7 @@ html(lang='en')
 									h3.about-detox-item-right-heading-title Омоложение организма
 								.about-detox-item-right-body
 									p.about-detox-item-right-body-text Обновляются все жизненные процессы, омолаживается организм! Результат - сияющий взгляд, блеск, упругость кожи, красивые волосы, крепкие ногти!
-						.about-detox-item.clearfix
+						.about-detox-item.clearfix.floated
 							.about-detox-item-left
 								img.about-detox-item-left-icon(src='./img/icon6.png')
 							.about-detox-item-right
@@ -136,10 +150,22 @@ html(lang='en')
 									h3.about-detox-item-right-heading-title Продолжительность жизни
 								.about-detox-item-right-body
 									p.about-detox-item-right-body-text Правильно применяя Detox-программу, вы вкладываете в своё долголетие и увеличиваете продолжительность жизни до 20 лет.
+		.contact-form-block
+			.contact-form-block-container.page-container.clearfix
+				.contact-form-header.block-header
+					.contact-form-title.block-title Что такое Detox?
+				.contact-form-block-left.floated
+					img.about-detox-img(src='./img/aboutdetox.jpg')
+				.contact-form-block-right.floated
+					.about-detox-form
+						h3.about-detox-form-heading Оставьте заявку
+						input.about-detox-form-input(type='text' placeholder='Имя...')
+						input.about-detox-form-input(type='text' placeholder='Телефон...')
+						.about-detox-form-button Отправить
 		#aboutus.about-us-block
-			.about-us-block-container
-				.about-us-block-heading
-					h2.about-us-block-heading-title О нас
+			.about-us-block-container.page-container
+				.about-us-block-heading.block-header
+					h2.about-us-block-heading-title.block-title О нас
 				.about-us-block-body.clearfix
 					.about-us-block-body-left
 						.about-us-block-body-left-title
@@ -166,11 +192,11 @@ html(lang='en')
 							.about-us-block-body-right-row-item
 								img.about-us-block-body-right-row-item-img(src='./img/detoximg/img8.jpg')
 		.benefits-block
-			.benefits-block-container
+			.benefits-block-container.page-container
 				.benefits-block-bg
 					.benefits-block-bg-hover
-						.benefits-block-bg-img-hover-header
-							h2.benefits-block-bg-img-hover-header-title Преимущества DetoxMe
+						.benefits-block-bg-img-hover-header.block-header
+							h2.benefits-block-bg-img-hover-header-title.block-title Преимущества DetoxMe
 						.benefits-block-bg-img-hover-body
 							p.benefits-block-bg-img-hover-body-text Вся система оздоровления от DetoxMe разработана диетологом для Вашего удобства и направлена на то, чтобы эффективно очищаясь, Вы не меняли свой привычный ритм жизни и не выпадали из рабочего процесса!
 							p.benefits-block-bg-img-hover-body-text Мы не пастеризуем, не добавляем сахар и консерванты!
@@ -178,108 +204,13 @@ html(lang='en')
 							p.benefits-block-bg-img-hover-body-text Сок, в отличии от традиционных фрешей, сделанных центрифужным методом, густой, сытный и невероятно вкусный ;)
 							p.benefits-block-bg-img-hover-body-text Наши снэки без белой муки / сахара / животных жиров.
 							p.benefits-block-bg-img-hover-body-text Наши Детокс-программы – это идеальная опция для максимально эффективного очищения организма в условиях большого города.
-		#assortment.assortment-block
-			.assortment-block-container
-				.assortment-block-header
-					h2.assortment-block-header-title Ассортимент
-				.assortment-block-body
-					.assortment-block-item.clearfix
-						.assortment-block-item-left
-							img.assortment-block-item-left-img(src='./img/orange.jpg')
-						.assortment-block-item-right
-							.assortment-block-item-order.order-button Заказать
-							h3.assortment-block-item-right-title.orange Detox soup Orange
-							.assortment-block-item-right-field
-								span.assortment-block-item-right-key Объем: 
-								span.assortment-block-item-right-value 370 ml
-							.assortment-block-item-right-field
-								span.assortment-block-item-right-key Калорийность: 
-								span.assortment-block-item-right-value 196 ккал
-							.assortment-block-item-right-field
-								span.assortment-block-item-right-key Белки: 
-								span.assortment-block-item-right-value 4,07 г
-							.assortment-block-item-right-field
-								span.assortment-block-item-right-key Жиры: 
-								span.assortment-block-item-right-value 3,7 г
-							.assortment-block-item-right-field
-								span.assortment-block-item-right-key Углеводы: 
-								span.assortment-block-item-right-value 16,3 г
-							.assortment-block-item-right-field
-								span.assortment-block-item-right-key Состав: 
-								span.assortment-block-item-right-value тыква, имбирь, кокосовое молоко
-							.assortment-block-item-right-about
-								p.assortment-block-item-right-text Легкий утренний нежный DETOX-суп, который задаст start очистительным процессам и настроит весь организм на очищение. Богат пектином, солями калия, кальция, магния, железа, а также медью и кобальтом. Содержит бета-каротин и витамины С, В1, В2, В6 и Е. Улучшает работу кишечника, способствует желчевыделению, понижает уровень жиров в крови, выводит токсины и укрепляет иммунитет.
-								p.assortment-block-item-right-text Рекомендуется при сердечно-сосудистых заболеваниях, проблемах с кожей, заболеваниях печени и почек, а также в качестве общеукрепляющего и витаминизирующего средства.
-					.assortment-block-item.clearfix
-						.assortment-block-item-left
-							img.assortment-block-item-left-img(src='./img/red.jpg')
-						.assortment-block-item-right
-							.assortment-block-item-order.order-button Заказать
-							h3.assortment-block-item-right-title.red Detox soup Red
-							.assortment-block-item-right-field
-								span.assortment-block-item-right-key Объем: 
-								span.assortment-block-item-right-value 370 ml
-							.assortment-block-item-right-field
-								span.assortment-block-item-right-key Калорийность: 
-								span.assortment-block-item-right-value 160 ккал
-							.assortment-block-item-right-field
-								span.assortment-block-item-right-key Белки: 
-								span.assortment-block-item-right-value 6,0 г
-							.assortment-block-item-right-field
-								span.assortment-block-item-right-key Жиры: 
-								span.assortment-block-item-right-value 2,9 г
-							.assortment-block-item-right-field
-								span.assortment-block-item-right-key Углеводы: 
-								span.assortment-block-item-right-value 29,6 г
-							.assortment-block-item-right-field
-								span.assortment-block-item-right-key Состав: 
-								span.assortment-block-item-right-value свекла, чернослив и расторопша
-							.assortment-block-item-right-about
-								p.assortment-block-item-right-text Самый полезный DETOX-суп для улучшения состава крови и образования кровяных телец. Улучшает работу печени, ускоряет метаболические процессы, обладает спазмолитическим, противосклеротическим и успокаивающим эффектом. Выводит избыточную жидкость и имеет природный эффект «допинга» - на 16% увеличивает выносливость и улучшает качество тренировок. Расторопша восстанавливает клетки печени, является сильнейшим антиоксидантом.
-								p.assortment-block-item-right-text Рекомендуется в качестве средства для укрепления иммунитета, комплексного очищения организма и омоложения.
-					.assortment-block-item.clearfix
-						.assortment-block-item-left
-							img.assortment-block-item-left-img(src='./img/green.jpg')
-						.assortment-block-item-right
-							.assortment-block-item-order.order-button Заказать
-							h3.assortment-block-item-right-title.green Detox soup Green
-							.assortment-block-item-right-field
-								span.assortment-block-item-right-key Объем: 
-								span.assortment-block-item-right-value 370 ml
-							.assortment-block-item-right-field
-								span.assortment-block-item-right-key Калорийность: 
-								span.assortment-block-item-right-value 170 ккал
-							.assortment-block-item-right-field
-								span.assortment-block-item-right-key Белки: 
-								span.assortment-block-item-right-value 12,2 г
-							.assortment-block-item-right-field
-								span.assortment-block-item-right-key Жиры: 
-								span.assortment-block-item-right-value 2,6 г
-							.assortment-block-item-right-field
-								span.assortment-block-item-right-key Углеводы: 
-								span.assortment-block-item-right-value 29,6 г
-							.assortment-block-item-right-field
-								span.assortment-block-item-right-key Состав: 
-								span.assortment-block-item-right-value цветная капуста, брокколли, сельдерей
-							.assortment-block-item-right-about
-								p.assortment-block-item-right-text Низкокалорийный DETOX-суп, содержит аскорбиновую и фолиевую кислоты, витамины группы В, РР, Е, магний, фосфор, а также соли кальция, калия и натрия. Суп обладает сильнейшими противовоспалительными, антиоксидантными и стимулирующими свойствами, выраженным противораковым эффектом, содержит Омега 3, является ценным источником кемпферола, биоактивного вещества, укрепляющего сосуды, способствующего выведению токсинов, обладающего антиаллергическим, общеукрепляющим и тонизирующим эффектом.
-								p.assortment-block-item-right-text Рекомендуется в качестве общеукрепляющего витаминного средства, которое налаживает метаболизм, содержит много витамина D (главного противника лишнего веса).
 		#plan.plan-block
-			.plan-block-container
-				.plan-block-header
-					h2.plan-block-header-title Программы
+			.plan-block-container.page-container
+				.plan-block-header.block-header
+					h2.plan-block-header-title.block-title Программы
 				.plan-block-body
 					.plan-block-body-items.clearfix
-						.plan-block-body-item
-							.plan-block-body-item-header.lite Detox Lite
-							.plan-block-body-item-content
-								h3.plan-block-body-item-title Detox Lite
-								p.plan-block-body-item-field Срок курса – 5 дней
-								.plan-block-body-item-field Завтрак – гранола, мёд, тыквенные семена, био- кефир
-								.plan-block-body-item-field 2 detox soup
-								.plan-block-body-item-field 3 detox напитка
-								.more-button Подробнее
-						.plan-block-body-item
+						.plan-block-body-item.floated
 							.plan-block-body-item-header.classic Detox Classic
 							.plan-block-body-item-content
 								h3.plan-block-body-item-title Detox Classic
@@ -288,22 +219,120 @@ html(lang='en')
 								.plan-block-body-item-field 5 детокс напитков
 								.plan-block-body-item-field Снек - перекус
 								.more-button Подробнее
-						.plan-block-body-item
+						.plan-block-body-item.floated
+							.plan-block-body-item-header.lite Detox Lite
+							.plan-block-body-item-content
+								h3.plan-block-body-item-title Detox Lite
+								p.plan-block-body-item-field Срок курса – 5 дней
+								.plan-block-body-item-field Завтрак – гранола, мёд, тыквенные семена, био- кефир
+								.plan-block-body-item-field 2 detox soup
+								.plan-block-body-item-field 3 detox напитка
+								.more-button Подробнее
+						.plan-block-body-item.floated
 							.plan-block-body-item-header.pro Detox Pro
 							.plan-block-body-item-content
 								h3.plan-block-body-item-title Detox Pro
 								.plan-block-body-item-field Срок курса – 14 дней
 								.plan-block-body-item-field Данный курс подбирается индивидуально нашими специалистами и диетологом, учитывая Ваши пожелания, цели и окончательный результат.
 								.more-button Подробнее
+		#assortment.assortment-block
+			.assortment-block-container.page-container
+				.assortment-block-header.block-header
+					h2.assortment-block-header-title.block-title Единственная в Казахстане программа суппинга
+				.assortment-block-body.clearfix
+					.assortment-block-item.floated
+						.assortment-block-item-img-block
+							img.assortment-block-item-img(src='./img/orange.jpg')
+						.assortment-block-item-content
+							.assortment-block-item-content-head.clearfix
+								h3.assortment-block-item-content-title.orange Detox soup Orange
+								.assortment-block-item-order.order-button Заказать
+							.assortment-block-item-content-field
+								span.assortment-block-item-content-key Объем: 
+								span.assortment-block-item-content-value 370 ml
+							.assortment-block-item-content-field
+								span.assortment-block-item-content-key Калорийность: 
+								span.assortment-block-item-content-value 196 ккал
+							.assortment-block-item-content-field
+								span.assortment-block-item-content-key Белки: 
+								span.assortment-block-item-content-value 4,07 г
+							.assortment-block-item-content-field
+								span.assortment-block-item-content-key Жиры: 
+								span.assortment-block-item-content-value 3,7 г
+							.assortment-block-item-content-field
+								span.assortment-block-item-content-key Углеводы: 
+								span.assortment-block-item-content-value 16,3 г
+							.assortment-block-item-content-field
+								span.assortment-block-item-content-key Состав: 
+								span.assortment-block-item-content-value тыква, имбирь, кокосовое молоко
+							.assortment-block-item-content-about
+								p.assortment-block-item-content-text Легкий утренний нежный DETOX-суп, который задаст start очистительным процессам и настроит весь организм на очищение. Богат пектином, солями калия, кальция, магния, железа, а также медью и кобальтом. Содержит бета-каротин и витамины С, В1, В2, В6 и Е. Улучшает работу кишечника, способствует желчевыделению, понижает уровень жиров в крови, выводит токсины и укрепляет иммунитет.
+								p.assortment-block-item-content-text Рекомендуется при сердечно-сосудистых заболеваниях, проблемах с кожей, заболеваниях печени и почек, а также в качестве общеукрепляющего и витаминизирующего средства.
+					.assortment-block-item.floated
+						.assortment-block-item-img-block
+							img.assortment-block-item-img(src='./img/red.jpg')
+						.assortment-block-item-content
+							.assortment-block-item-content-head.clearfix
+								h3.assortment-block-item-content-title.red Detox soup Red
+								.assortment-block-item-order.order-button Заказать
+							.assortment-block-item-content-field
+								span.assortment-block-item-content-key Объем: 
+								span.assortment-block-item-content-value 370 ml
+							.assortment-block-item-content-field
+								span.assortment-block-item-content-key Калорийность: 
+								span.assortment-block-item-content-value 160 ккал
+							.assortment-block-item-content-field
+								span.assortment-block-item-content-key Белки: 
+								span.assortment-block-item-content-value 6,0 г
+							.assortment-block-item-content-field
+								span.assortment-block-item-content-key Жиры: 
+								span.assortment-block-item-content-value 2,9 г
+							.assortment-block-item-content-field
+								span.assortment-block-item-content-key Углеводы: 
+								span.assortment-block-item-content-value 29,6 г
+							.assortment-block-item-content-field
+								span.assortment-block-item-content-key Состав: 
+								span.assortment-block-item-content-value свекла, чернослив и расторопша
+							.assortment-block-item-content-about
+								p.assortment-block-item-content-text Самый полезный DETOX-суп для улучшения состава крови и образования кровяных телец. Улучшает работу печени, ускоряет метаболические процессы, обладает спазмолитическим, противосклеротическим и успокаивающим эффектом. Выводит избыточную жидкость и имеет природный эффект «допинга» - на 16% увеличивает выносливость и улучшает качество тренировок. Расторопша восстанавливает клетки печени, является сильнейшим антиоксидантом.
+								p.assortment-block-item-content-text Рекомендуется в качестве средства для укрепления иммунитета, комплексного очищения организма и омоложения.
+					.assortment-block-item.floated
+						.assortment-block-item-img-block
+							img.assortment-block-item-img(src='./img/green.jpg')
+						.assortment-block-item-content
+							.assortment-block-item-content-head.clearfix
+								h3.assortment-block-item-content-title.green Detox soup Green
+								.assortment-block-item-order.order-button Заказать
+							.assortment-block-item-content-field
+								span.assortment-block-item-content-key Объем: 
+								span.assortment-block-item-content-value 370 ml
+							.assortment-block-item-content-field
+								span.assortment-block-item-content-key Калорийность: 
+								span.assortment-block-item-content-value 170 ккал
+							.assortment-block-item-content-field
+								span.assortment-block-item-content-key Белки: 
+								span.assortment-block-item-content-value 12,2 г
+							.assortment-block-item-content-field
+								span.assortment-block-item-content-key Жиры: 
+								span.assortment-block-item-content-value 2,6 г
+							.assortment-block-item-content-field
+								span.assortment-block-item-content-key Углеводы: 
+								span.assortment-block-item-content-value 29,6 г
+							.assortment-block-item-content-field
+								span.assortment-block-item-content-key Состав: 
+								span.assortment-block-item-content-value цветная капуста, брокколли, сельдерей
+							.assortment-block-item-content-about
+								p.assortment-block-item-content-text Низкокалорийный DETOX-суп, содержит аскорбиновую и фолиевую кислоты, витамины группы В, РР, Е, магний, фосфор, а также соли кальция, калия и натрия. Суп обладает сильнейшими противовоспалительными, антиоксидантными и стимулирующими свойствами, выраженным противораковым эффектом, содержит Омега 3, является ценным источником кемпферола, биоактивного вещества, укрепляющего сосуды, способствующего выведению токсинов, обладающего антиаллергическим, общеукрепляющим и тонизирующим эффектом.
+								p.assortment-block-item-content-text Рекомендуется в качестве общеукрепляющего витаминного средства, которое налаживает метаболизм, содержит много витамина D (главного противника лишнего веса).
 		#contacts.contact-block
-			.contact-block-container.clearfix
-				.contact-block-heading
-					h2.contact-block-title Наши контакты
-				.contact-block-content
+			.contact-block-container.page-container.clearfix
+				.contact-block-heading.block-header
+					h2.contact-block-title.block-title Наши контакты
+				.contact-block-content.floated
 					p.contact-block-content-text Мы благодарим Вас за проявленный интерес к нашей компании. Если у вас возникли вопросы, пожалуйста, заполните форму вашими контактами и кратким описанием вопроса или предложения. Мы постараемся ответить вам в самые кратчайшие сроки.
 					p.contact-block-content-text Если вы хотите связаться с нами прямо сейчас, то позвоните по следующему номерому:
-					p.contact-block-content-text 8 700 999 05 55
-				.contact-block-form
+					p.contact-block-content-text-phone 8 700 999 05 55
+				.contact-block-form.floated
 					h3.form-title Напишите нам:
 					.form-field-item
 						label.form-label(for='name') Имя:
@@ -319,7 +348,7 @@ html(lang='en')
 						textarea.form-textarea(name='message')
 					.form-submit-button Отправить
 		.insta-block
-			.insta-block-container
+			.insta-block-container.page-container
 				.insta-block-header
 					h2.insta-block-title Мы в Instagram
 				.insta-block-body
@@ -356,11 +385,11 @@ html(lang='en')
 							.insta-block-slider-content-item
 								img.insta-img(src='./img/insta/img15.jpg')
 		.footer-block
-			.footer-block-container
+			.footer-block-container.page-container
 				.footer-block-content.clearfix
-					.footer-block-content-left
+					.footer-block-content-left.floated
 						span.footer-block-content-span.detox-span DetoxMe Almaty, 2017
-					.footer-block-content-right
+					.footer-block-content-right.floated
 						span.footer-block-content-span.follow-span Follow Us:
 						span.footer-block-content-span
 							i.fa.fa-lg.fa-facebook.soc-icon(aria-hidden="true")
@@ -368,8 +397,6 @@ html(lang='en')
 							i.fa.fa-lg.fa-instagram.soc-icon(aria-hidden="true")
 						span.footer-block-content-span
 							i.fa.fa-lg.fa-vk.soc-icon(aria-hidden="true")
-		//- script(type='text/javascript', src='//code.jquery.com/jquery-1.11.0.min.js')
-		//- script(type='text/javascript', src='//code.jquery.com/jquery-migrate-1.2.1.min.js')
 		script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
 		script(type='text/javascript', src='./js/slick.min.js')
 		script(src='./js/main.js')
