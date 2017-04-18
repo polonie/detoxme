@@ -253,8 +253,17 @@
 							font-size: 20px;
 							padding: 10px 0;
 							color: #fff;
-							background: #b5d887;
+							
 						}
+							.lightgreen{
+								background: #b5d887;
+							}
+							.pink{
+								background: #eaa4cb;
+							}
+							.brown{
+								background: #e8b76d;
+							}
 					.slide-block-title{
 						float: left;
 						width: calc(100% - 50px - 50%);
