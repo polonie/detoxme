@@ -41,6 +41,4 @@ $(document).ready(function(){
 			.animate({opacity: "0"});
 			$('.popup-window').animate({top: "-=100px"})
 	});
-	var rightHeight = $('.about-us-block-body-right').css('height');
-	$('.about-us-block-body-left').css('height', rightHeight).css('overflow', 'hidden');
 });
