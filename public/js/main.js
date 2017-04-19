@@ -41,8 +41,8 @@ $(document).ready(function(){
 			.animate({opacity: "0"});
 			$('.popup-window').animate({top: "-=100px"})
 	});
-	$('.more-button').mouseover(function(e) {
-		$('.plan-block-body-item-hover-block').css('display', 'block')
-			.animate({opacity: '1'}, 200);
-	});
+	// $('.more-button').mouseover(function(e) {
+	// 	$('.plan-block-body-item-hover-block').css('display', 'block')
+	// 		.animate({opacity: '1'}, 200);
+	// });
 });
