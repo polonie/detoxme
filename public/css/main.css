@@ -21,6 +21,9 @@
 	background: #fff;
 	position: relative;
 }
+.page-container{
+	padding-bottom: 60px;
+}
 .block-title{
 	font-size: 30px;
 	font-weight: 200;
@@ -285,7 +288,6 @@
 /*ABOUT DETOX BLOCK*/
 	.about-detox-block{
 		background: #242b40;
-		padding-bottom: 30px;
 	}
 		.about-detox-block-container{
 			width: 1200px;
@@ -482,7 +484,6 @@
 /*ABOUT US BLOCK*/
 	.benefits-block{
 		margin-top: 50px;
-		padding-bottom: 100px;
 	}
 		.benefits-block-container{
 			width: 1000px;
@@ -624,7 +625,6 @@
 /*PLAN BLOCK*/
 	.plan-block{
 		background: #fdfdfd;
-		padding-bottom: 100px;
 	}
 		.plan-block-container{
 			width: 900px;
@@ -644,10 +644,22 @@
 
 				}
 					.plan-block-body-item{
+						position: relative;
 						float: left;
 						margin-right: 60px;
 						width: calc((100% - 120px) / 3);
 						background: #fff;
+					}
+					.plan-block-body-item-hover-block{
+						display: block;
+						opacity: 0;
+						z-index: 1000;
+						position: absolute;
+						top:0;
+						left: 0;
+						right: 0;
+						bottom: 0;
+						background: rgba(0, 0, 0, 1);
 					}
 					.plan-block-body-item:nth-last-child(1){
 						margin-right: 0;
@@ -842,7 +854,7 @@
 						}
 /*FOOTER-BLOCK*/
 .footer-block{
-	margin-top: 70px;
+	margin-top: 50px;
 }
 .footer-block-container{
 	border-top: 1px solid #e0e0e0;

@@ -7,7 +7,7 @@
 	}
 	.page-container{
 		width: 100%;
-		padding: 20px 10px;
+		padding-bottom: 20px;
 		margin: 0;
 	}
 	.floated{
@@ -44,6 +44,9 @@
 	.about-detox-form{
 		border-left: 1px solid #e0e0e0;
 	}
+	.about-detox-item:first-child{
+		margin-top: 0;
+	}
 	.slide-content-bottom{
 		top: 0;
 	}
@@ -51,7 +54,7 @@
 		font-size: 20px;
 	}
 	.about-detox-block-body{
-		margin-top: 20px;
+		margin-top: 0;
 	}
 	.about-detox-items-row{
 		margin:0;
@@ -68,11 +71,26 @@
 	.benefits-block-bg-hover{
 		padding: 10px;
 	}
+	.assortment-block-item-content-title{
+		font-size: 16px;
+	}
 	.contact-form-block-left{
 		margin-top: 0;
 	}
+	.contact-block-form{
+		padding: 10px;
+	}
+	.contact-block-content{
+		padding: 10px;
+	}
+	.form-title{
+		font-size: 20px;
+	}
 	.contact-block-content-text{
 		font-size: 14px;
+	}
+	.insta-block{
+		margin-top: 40px;
 	}
 	.footer-block-content-left{
 		text-align: center;
