@@ -10,6 +10,8 @@ html(lang='en')
 		link(href='./css/media.css' rel='stylesheet')
 		link(href='https://fonts.googleapis.com/css?family=Roboto:200,300,300i,400,400i,500,500i,700&subset=cyrillic', rel='stylesheet')
 		script(src="https://use.fontawesome.com/335720a3b2.js")
+		script(type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js")
+		script(src='./js/email.js')
 	body.page
 		.hover-block
 			.popup-window.floated
@@ -19,12 +21,13 @@ html(lang='en')
 				form.brief-form
 					.brief-form-field
 						label.brief-form-label(for='brief-name') Ваше имя
-						input.brief-form-input(type='text' name='brief-name')
+						input.brief-form-input#form-input-name(type='text' name='brief-name')
 					.brief-form-field
 						label.brief-form-label(for='brief-phone') Ваш телефон
-						input.brief-form-input(type='text' name='brief-phone')
+						input.brief-form-input#form-input-phone(type='text' name='brief-phone')
 					.brief-form-field
-						input.brief-form-submit(type='submit' name='submit' value='Отправить')
+						span#brief-form-submit.enabled Отправить
+						span#return-message Сообщение отправлено
 		.nav-top
 			.nav-top-container.page-container.clearfix
 				.nav-contacts.floated
@@ -55,7 +58,7 @@ html(lang='en')
 				.nav-order.floated
 					.nav-button-row.clearfix
 						.nav-order-button.nav-button.order-button.floated Сделать заказ
-			.nav-menu
+			.nav-menu#nav-menu
 				.nav-links
 					.nav-link-item.floated
 						a(href='#aboutdetox').nav-link.link О Detox
