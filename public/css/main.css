@@ -14,7 +14,7 @@
 	visibility: hidden;
 }
 .disabled{
-	background: red;
+	background: #c3c3c3;
 }
 .enabled{
 	background: #4f4f4f;
@@ -131,9 +131,9 @@
 					}
 					#return-message{
 						display: none;
-						margin-left: 20px;
-						font-size: 16px;
-						font-weight: 200;
+						margin-left: 15px;
+						font-size: 14px;
+						font-weight: 400;
 						line-height: 1.5em;
 					}
 					.return-message-error{
@@ -862,6 +862,11 @@
 				}
 				.form-submit-button{
 					background: #888;
+				}
+				.contact-form-returned-message{
+					margin-top: 20px;
+					font-size: 14px;
+					font-weight: 400;
 				}
 /*INSTA-BLOCK*/
 .insta-block{

@@ -21,13 +21,13 @@ html(lang='en')
 				form.brief-form
 					.brief-form-field
 						label.brief-form-label(for='brief-name') Ваше имя
-						input.brief-form-input#form-input-name(type='text' name='brief-name')
+						input.brief-form-input#order-form-input-name(type='text' name='brief-name')
 					.brief-form-field
 						label.brief-form-label(for='brief-phone') Ваш телефон
-						input.brief-form-input#form-input-phone(type='text' name='brief-phone')
+						input.brief-form-input#order-form-input-phone(type='text' name='brief-phone')
 					.brief-form-field
 						span#brief-form-submit.enabled Отправить
-						span#return-message Сообщение отправлено
+						span#return-message
 		.nav-top
 			.nav-top-container.page-container.clearfix
 				.nav-contacts.floated
@@ -377,17 +377,18 @@ html(lang='en')
 					h3.form-title Напишите нам:
 					.form-field-item
 						label.form-label(for='name') Имя:
-						input.form-input.form-input-name(type='text', name='name')
+						input.form-input.form-input-name#contact-form-input-name(type='text', name='name')
 					.form-field-item
 						label.form-label(for='phone') Телефон:
-						input.form-input.form-input-phone(type='text', name='phone')
+						input.form-input.form-input-phone#contact-form-input-phone(type='text', name='phone')
 					.form-field-item
 						label.form-label(for='email') Эл.адрес:
-						input.form-input.form-input-email(type='text', name='email')
+						input.form-input.form-input-email#contact-form-input-email(type='text', name='email')
 					.form-field-item
 						label.form-label(for='message') Сообщение:
-						textarea.form-textarea(name='message')
-					.form-submit-button Отправить
+						textarea.form-textarea#contact-form-input-message(name='message')
+					.form-submit-button#contact-form-submit Отправить
+					.contact-form-returned-message
 		.insta-block
 			.insta-block-container.page-container
 				.insta-block-header
