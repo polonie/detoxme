@@ -18,17 +18,17 @@ html(lang='en')
 			.popup-window.floated
 				.popup-window-close-button
 					i.fa.fa-times.close-icon(aria-hidden='true')
-				h3.popup-window-title Оставьте заявку
-				form.order-form
-					.order-form-field
-						label.order-form-label(for='order-name') Ваше имя
-						input.order-form-input#order-form-input-name(type='text' name='order-name')
-					.order-form-field
-						label.order-form-label(for='order-phone') Ваш телефон
-						input.order-form-input#order-form-input-phone(type='text' name='order-phone')
-					.order-form-field
-						span#order-form-submit.enabled Отправить
-						span#return-message
+				form.form
+					h3.form-title Оставьте заявку
+					.form-field
+						label.form-label(for='order-name') Ваше имя
+						input.form-input(type='text' name='order-name')
+					.form-field
+						label.form-label(for='order-phone') Ваш телефон
+						input.form-input(type='text' name='order-phone')
+					.form-field
+						span.submit-button.enabled Отправить
+					.form-message
 		.nav-top
 			.nav-top-container.page-container.clearfix
 				.nav-contacts.floated
@@ -157,11 +157,15 @@ html(lang='en')
 						h3.about-detox-text-title Хотите подробнее узнать о Detox?
 					img.about-detox-img(src='./img/aboutdetox.jpg')
 				.contact-form-block-right.floated
-					.about-detox-form
-						h3.about-detox-form-heading Оставьте заявку
-						input.about-detox-form-input(type='text' placeholder='Имя...')
-						input.about-detox-form-input(type='text' placeholder='Телефон...')
-						.about-detox-form-button Отправить
+					form.form.about-detox-form
+						h3.form-title Оставьте заявку
+						.form-field
+							input.form-input(type='text' placeholder='Имя...')
+						.form-field
+							input.form-input(type='text' placeholder='Телефон...')
+						.form-field
+							span.submit-button.enabled Отправить
+						.form-message
 		#aboutus.about-us-block
 			.about-us-block-container.page-container
 				.about-us-block-heading.block-header
@@ -254,6 +258,9 @@ html(lang='en')
 					.plan-block-body-items.clearfix
 						.plan-block-body-item.floated
 							.plan-block-body-item-hover
+								h3.plan-block-hover-title Detox Classic
+								p.plan-block-hover-text Detox Classic - курс отлично подойдет для тех, кто только открывает для себя данный вид очищения организма.
+								p.plan-block-hover-text Вы оцените все преимущества уже на третий день
 							.plan-block-body-item-header.classic Detox Classic
 							.plan-block-body-item-content
 								h3.plan-block-body-item-title Detox Classic
@@ -261,9 +268,13 @@ html(lang='en')
 								.plan-block-body-item-field Завтрак – гранола, мёд, тыквенные семена, био- кефир (400 мл)
 								.plan-block-body-item-field 5 детокс напитков
 								.plan-block-body-item-field Снек - перекус
-								.more-button Подробнее
+							.more-button Подробнее
 						.plan-block-body-item.floated
 							.plan-block-body-item-hover
+								h3.plan-block-hover-title Detox Lite
+								p.plan-block-hover-text Detox LITE - содержит в себе не только соки, но и легкие блюда с высоким содержанием клетчатки, антиоксидантов и энзимов.
+								p.plan-block-hover-text В данном курсе имеется суповое меню, которое поможет без труда очиститься и получить дневную дозу витаминов, благодаря разнообразию супов пюре и кремообразных супов из сезонных овощей, трав и фруктов.
+								p.plan-block-hover-text Курс пройдет легко и эффективно.
 							.plan-block-body-item-header.lite Detox Lite
 							.plan-block-body-item-content
 								h3.plan-block-body-item-title Detox Lite
@@ -271,15 +282,19 @@ html(lang='en')
 								.plan-block-body-item-field Завтрак – гранола, мёд, тыквенные семена, био- кефир
 								.plan-block-body-item-field 2 detox soup
 								.plan-block-body-item-field 3 detox напитка
-								.more-button Подробнее
+							.more-button Подробнее
 						.plan-block-body-item.floated
 							.plan-block-body-item-hover
-							.more-button Подробнее
+								h3.plan-block-hover-title Detox Pro
+								p.plan-block-hover-text Detox PRO – подходит для более продвинутого уровня.
+								p.plan-block-hover-text Курс позволит эффективно очистить оганизм, улучшит состояние кожи, волос и ногтей, даст омолаживающий эффект и поможет потерять до 5 кг. Вы плавно и легко войдете в детокс.
+								p.plan-block-hover-text
 							.plan-block-body-item-header.pro Detox Pro
 							.plan-block-body-item-content
 								h3.plan-block-body-item-title Detox Pro
 								.plan-block-body-item-field Срок курса – 14 дней
 								.plan-block-body-item-field Данный курс подбирается индивидуально нашими специалистами и диетологом, учитывая Ваши пожелания, цели и окончательный результат.
+							.more-button Подробнее
 		#assortment.assortment-block
 			.assortment-block-container.page-container
 				.assortment-block-header.block-header
@@ -378,22 +393,23 @@ html(lang='en')
 					p.contact-block-content-text Если вы хотите связаться с нами прямо сейчас, то позвоните по следующему номерому:
 					p.contact-block-content-text-phone 8 700 999 05 55
 				.contact-block-form.floated
-					.contact-form
+					form.form
 						h3.form-title Напишите нам:
-						.form-field-item
+						.form-field
 							label.form-label(for='name') Имя:
-							input.form-input#contact-form-input-name(type='text', name='name')
-						.form-field-item
+							input.form-input(type='text', name='name')
+						.form-field
 							label.form-label(for='phone') Телефон:
-							input.form-input#contact-form-input-phone(type='text', name='phone')
-						.form-field-item
+							input.form-input(type='text', name='phone')
+						.form-field
 							label.form-label(for='email') Эл.адрес:
-							input.form-input#contact-form-input-email(type='text', name='email')
-						.form-field-item
+							input.form-input(type='text', name='email')
+						.form-field
 							label.form-label(for='message') Сообщение:
-							textarea.form-input#contact-form-input-message(name='message')
-						.form-submit-button.enabled#contact-form-submit Отправить
-						.contact-form-returned-message
+							textarea.form-input(name='message')
+						.form-field
+							span.submit-button.enabled Отправить
+						.form-message
 		.insta-block
 			.insta-block-container.page-container
 				.insta-block-header
@@ -438,11 +454,11 @@ html(lang='en')
 						span.footer-block-content-span.detox-span DetoxMe Almaty, 2017
 					.footer-block-content-right.floated
 						span.footer-block-content-span.follow-span Follow Us:
-						span.footer-block-content-span
+						a.footer-block-content-link(target="_blank" href='https://www.facebook.com/Detoxmekz-865754436897982/')
 							i.fa.fa-lg.fa-facebook.soc-icon(aria-hidden="true")
-						span.footer-block-content-span
+						a.footer-block-content-link(target="_blank" href='https://www.instagram.com/detoxme.kz/')
 							i.fa.fa-lg.fa-instagram.soc-icon(aria-hidden="true")
-						span.footer-block-content-span
+						span.footer-block-content-link
 							i.fa.fa-lg.fa-vk.soc-icon(aria-hidden="true")
 		script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
 		script(type='text/javascript', src='./js/slick.min.js')
