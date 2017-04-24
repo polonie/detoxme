@@ -67,10 +67,16 @@ $(document).ready(function(){
 				message.text('Пожалуйста, заполните все поля').css('color','red').fadeIn().delay(800).fadeOut();
 				return;
 			}else{
+				var template;
+				if (self.hasClass('contact-form')){
+					template = 'contact_template';
+				}else{
+					template = 'order_template';
+				}
 				console.log(email);
 				self.off('click', sendMessage)
 				submitbutton.removeClass('enabled').addClass('disabled').text('Полождите...');
-				emailjs.send('test_email','test_email_template', email)
+				emailjs.send('detox_mail', template, email)
 				.then(function(response) {
 						console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
 						submitbutton.removeClass('disabled').addClass('enabled').text('Отправить')

@@ -21,11 +21,11 @@ html(lang='en')
 				form.form
 					h3.form-title Оставьте заявку
 					.form-field
-						label.form-label(for='order-name') Ваше имя
-						input.form-input(type='text' name='order-name')
+						label.form-label(for='name') Ваше имя
+						input.form-input(type='text' name='name')
 					.form-field
-						label.form-label(for='order-phone') Ваш телефон
-						input.form-input(type='text' name='order-phone')
+						label.form-label(for='phone') Ваш телефон
+						input.form-input(type='text' name='phone')
 					.form-field
 						span.submit-button.enabled Отправить
 					.form-message
@@ -160,9 +160,9 @@ html(lang='en')
 					form.form.about-detox-form
 						h3.form-title Оставьте заявку
 						.form-field
-							input.form-input(type='text' placeholder='Имя...')
+							input.form-input(type='text' name='name' placeholder='Имя...')
 						.form-field
-							input.form-input(type='text' placeholder='Телефон...')
+							input.form-input(type='text' phone='phone' placeholder='Телефон...')
 						.form-field
 							span.submit-button.enabled Отправить
 						.form-message
@@ -393,7 +393,7 @@ html(lang='en')
 					p.contact-block-content-text Если вы хотите связаться с нами прямо сейчас, то позвоните по следующему номерому:
 					p.contact-block-content-text-phone 8 700 999 05 55
 				.contact-block-form.floated
-					form.form
+					form.form.contact-form
 						h3.form-title Напишите нам:
 						.form-field
 							label.form-label(for='name') Имя:
@@ -405,8 +405,8 @@ html(lang='en')
 							label.form-label(for='email') Эл.адрес:
 							input.form-input(type='text', name='email')
 						.form-field
-							label.form-label(for='message') Сообщение:
-							textarea.form-input(name='message')
+							label.form-label(for='text') Сообщение:
+							textarea.form-input(name='text')
 						.form-field
 							span.submit-button.enabled Отправить
 						.form-message
