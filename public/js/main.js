@@ -107,9 +107,6 @@ $(document).ready(function(){
 			$('#nav-menu').removeClass('fixed-nav');
 		}
 	};
-	if ($(window).width() < 768){
-		$('#nav-menu').removeClass('fixed-nav');
-	}
 	$(window).on('scroll', navmenu);
 	$(window).resize(function(e) {
 		var scrollPosition = $(this).scrollTop();

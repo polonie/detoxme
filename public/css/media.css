@@ -12,6 +12,13 @@
 		padding-right: 10px;
 		margin: 0;
 	}
+	.fixed-nav{
+		position: static;
+		background: transparent;
+		box-shadow: none;
+		border-top: 1px solid #333;
+		border-bottom: 1px solid #333;
+	}
 	.floated{
 		float: none;
 		width: 100%;
