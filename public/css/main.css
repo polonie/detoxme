@@ -13,6 +13,40 @@
 	clear: both;
 	visibility: hidden;
 }
+html {
+	-webkit-transition: background-color 1s;
+	transition: background-color 1s;
+}
+html, body {
+	min-height: 100%;
+}
+html.loading {
+	background: #fff url(../img/gif/preloader.gif) no-repeat 50% 50%;
+	-webkit-transition: background-color 0;
+	transition: background-color 0;
+	position: fixed;
+	top: 0;
+	border-top: 0;
+	left: 0;
+	right: 0;
+	height: 100vh;
+	width: 100vw;
+}
+body {
+	-webkit-transition: opacity 1s ease-in;
+	transition: opacity 1s ease-in;
+	}
+html.loading body {
+	opacity: 0;
+	-webkit-transition: opacity 0;
+	transition: opacity 0;
+}
+/*title{
+	display: none;
+}
+style{
+	display: none;
+}*/
 .form{
 	padding: 30px;
 	background: #fff;

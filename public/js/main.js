@@ -1,3 +1,9 @@
+var element = document.querySelector('.loading');
+window.onload = () =>
+{
+		element.classList.remove('loading');
+};
+
 $(document).ready(function(){
 	$('.slider').slick({
 		autoplay: true,
