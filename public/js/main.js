@@ -40,7 +40,6 @@ $(document).ready(function(){
 	$('.nav-link').click(function(e){
 		e.preventDefault();
 		var linkHref = $(this).attr('href');
-		console.log(linkHref);
 		$('html, body').animate({
 			scrollTop: $(linkHref).offset().top
 		}, 500);
@@ -53,13 +52,11 @@ $(document).ready(function(){
 
 	function sendMessage(e){
 		var self = $(this);
-		console.log(self);
 		if (e.target.matches('.submit-button') ){
 			var submitbutton = self.find('.submit-button');
 			var email = {};
 			var inputs = self.find('.form-input');
 			var isValid = inputs.length;
-			console.log(isValid);
 			var filled = isValid;
 			var message = self.children('.form-message');
 			inputs.each(function() {
@@ -79,12 +76,10 @@ $(document).ready(function(){
 				}else{
 					template = 'order_template';
 				}
-				console.log(email);
 				self.off('click', sendMessage)
 				submitbutton.removeClass('enabled').addClass('disabled').text('Полождите...');
 				emailjs.send('detox_mail', template, email)
 				.then(function(response) {
-						console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
 						submitbutton.removeClass('disabled').addClass('enabled').text('Отправить')
 						message.text('Сообщение отправлено').css('color','#45e45b').fadeIn().delay(800).fadeOut()
 						self.on('click', sendMessage);
@@ -92,7 +87,6 @@ $(document).ready(function(){
 						submitbutton.removeClass('disabled').addClass('enabled').text('Отправить')
 						self.on('click', sendMessage);
 						message.text('Произошла ошибка').css('color','red').fadeIn().delay(800).fadeOut()
-						console.log("FAILED. error=", err);
 					}
 				);
 			}
